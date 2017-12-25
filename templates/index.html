@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
+    <title>OpenTSS Writer</title>
+
+
 </head>
 <body>
-<h1>Home Page!</h1>
+<h1>OpenTSS Writer</h1>
 <h2>Loaded Site At : {{ now }}</h2>
 <h3>{{ testv }}</h3>
+<br>
+<h3>to use this service please login into your OpenTSS account</h3>
+<button onclick="window.location='{% url 'login' %}'">
+Login
+</button>
 </body>
 </html>
