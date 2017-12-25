@@ -7,7 +7,7 @@
 <body>
 <h1>Login to your OpenTSS Account</h1>
 
-<form action="" method="post">
+<form name="loginform" action="{% url "actuallogin" %}"  method="post">{% csrf_token %}
     <h2>Username</h2>
 <input type="text" name="username" value="username"></input>
     <br>
